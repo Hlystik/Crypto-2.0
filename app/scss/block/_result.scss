@@ -42,23 +42,23 @@
     }
 
     &_play::before {
-      background: url(../../images/icon/play.png) center center/contain no-repeat;
+      background: url(../images/icon/play.png) center center/contain no-repeat;
     }
 
     &_edit::before {
-      background: url(../../images/icon/edit.png) center center/contain no-repeat;
+      background: url(../images/icon/edit.png) center center/contain no-repeat;
     }
 
     &_chat::before {
-      background: url(../../images/icon/chat.png) center center/contain no-repeat;
+      background: url(../images/icon/chat.png) center center/contain no-repeat;
     }
 
     &_zoom::before {
-      background: url(../../images/icon/zoom.png) center center/contain no-repeat;
+      background: url(../images/icon/zoom.png) center center/contain no-repeat;
     }
 
     &_profile::before {
-      background: url(../../images/icon/profile.png) center center/contain no-repeat;
+      background: url(../images/icon/profile.png) center center/contain no-repeat;
     }
   }
   &__item-img {

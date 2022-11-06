@@ -8,10 +8,10 @@ body {
   font-size: 30px;
   line-height: 35px;
   color: #F4F4F4;
-  background:  url(../images/background.svg) -55px 0/180%, #121212;
+  background:  url(../images/background.png) -55px 0/180%, #121212;
   color: #F4F4F4;
   @media (min-width: 1280px) {
-    background:  url(../images/background.svg) -55px 0/100%, #121212;
+    background:  url(../images/background.png) -55px 0/100%, #121212;
   }
   @media (max-width: 1280px) {
     font-size: 20px;
@@ -54,10 +54,12 @@ body {
 }
 .blue {
   background: #019EEB;
+  padding: 0 10px;
   border-radius: 10px;
 }
 .orange {
   background: #FF8A1E;
+  
   border-radius: 10px;
 }
 
