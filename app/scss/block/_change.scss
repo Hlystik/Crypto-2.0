@@ -1,0 +1,16 @@
+.change {
+  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__contact {
+    margin-top: 230px;
+  }
+  &__img {
+    transform: rotate(19deg);
+    margin-top: 100px;
+    margin-right: 80px;
+  }
+}

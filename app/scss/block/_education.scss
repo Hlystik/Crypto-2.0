@@ -1,0 +1,48 @@
+.education {
+  padding-top: 200px;
+  &__subtitle {
+    text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+
+  &__item {
+    width: 620px;
+    margin-top: 60px;
+  }
+
+  &__item-img {
+    border-radius: 25px;
+    margin-bottom: -255px;
+    &_posit {
+      border-radius: 55px;
+      margin-bottom: -285px;
+    }
+  }
+
+  &__info {
+    padding: 35px 40px;
+    background: #232323;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    min-height: 600px;
+  }
+
+  &__info-title {
+    @extend %flex-title;
+    min-height: 138px;
+  }
+  &__list-item+
+  &__list-item {
+    margin-top: 20px;
+  }
+}

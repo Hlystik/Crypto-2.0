@@ -1,0 +1,52 @@
+.autor {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 366px;
+  &::after {
+    content: '';
+    position: absolute;
+    background: url(../../images/Bitcoin_Ing.png)center center/contain no-repeat;
+    height: 1868px;
+    width: 1901px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    z-index: -1;
+    pointer-events: none;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &__text {
+    width: 400px;
+    height: 124px;
+    padding: 24px 11px;
+    text-align: center;
+    background: linear-gradient(97.31deg, rgba(243, 243, 243, 0.2) 0%, rgba(243, 243, 243, 0.154583) 69.71%, rgba(243, 243, 243, 0.0861612) 89.95%, rgba(243, 243, 243, 0) 107.94%);
+    border: 1px solid rgba(247, 252, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    &_one {
+      margin-top: 160px;
+      margin-left: 120px;
+    }
+
+    &_two {
+      margin-left: auto;
+    }
+
+    &_three {
+      margin-top: 226px;
+    }
+
+    &_four {
+      margin-left: auto;
+      margin-right: 120px;
+    }
+  }
+}

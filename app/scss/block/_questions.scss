@@ -1,0 +1,27 @@
+.questions {
+  padding-top: 200px;
+  position: relative;
+  &__wrapper {
+    position: relative;
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+    max-width: 620px;
+  }
+
+  &__img {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__telegramm {
+    display: block;
+    margin-top: 80px;
+    width: 120px;
+    height: 120px;
+  }
+}

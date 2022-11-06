@@ -1,0 +1,32 @@
+.faq {
+  padding-top: 200px;
+  &__accordeon {
+    margin-top: 100px;
+  }
+}
+.acc-head {
+  margin-top: 40px;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url(../../images/icon/Icon/cross.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    right: 0;
+    transform: rotate(135deg);
+    transition: .5s;
+  }
+}
+.acc-head_active::after {
+  transform: rotate(90deg);
+}
+.acc-body {
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  display: none;
+}

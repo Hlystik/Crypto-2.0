@@ -1,0 +1,66 @@
+html,
+body {
+	height: 100%;
+}
+body {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #F4F4F4;
+  background:  url(../images/background.svg) -55px 0/180%, #121212;
+  color: #F4F4F4;
+  @media (min-width: 1280px) {
+    background:  url(../images/background.svg) -55px 0/100%, #121212;
+  }
+  @media (max-width: 1280px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  //border: 4px solid red;
+  position: relative;
+  /* @media (max-width: 1440px) {
+    max-width: 1280px;
+  } */
+  @media (max-width: 1280px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+.blue {
+  background: #019EEB;
+  border-radius: 10px;
+}
+.orange {
+  background: #FF8A1E;
+  border-radius: 10px;
+}
+
+
+
+

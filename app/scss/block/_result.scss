@@ -1,0 +1,82 @@
+.result {
+  padding-top: 195px;
+  &__subtitle {
+    text-align: center;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 36px;
+  }
+
+  &__item {
+    width: 410px;
+    margin-top: 147px;
+  }
+  &__item-info {
+    position: relative;
+    height: 220px;
+    background: linear-gradient(97.31deg, rgba(243, 243, 243, 0.2) 0%, rgba(243, 243, 243, 0.154583) 69.71%, rgba(243, 243, 243, 0.0861612) 89.95%, rgba(243, 243, 243, 0) 107.94%);
+    border: 2px solid rgba(247, 252, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 103px;
+      height: 103px;
+      top: -78px;
+    }
+    &_info::before {
+      background: url(../images/icon/info.png) center center/contain no-repeat;
+    }
+
+    &_play::before {
+      background: url(../../images/icon/play.png) center center/contain no-repeat;
+    }
+
+    &_edit::before {
+      background: url(../../images/icon/edit.png) center center/contain no-repeat;
+    }
+
+    &_chat::before {
+      background: url(../../images/icon/chat.png) center center/contain no-repeat;
+    }
+
+    &_zoom::before {
+      background: url(../../images/icon/zoom.png) center center/contain no-repeat;
+    }
+
+    &_profile::before {
+      background: url(../../images/icon/profile.png) center center/contain no-repeat;
+    }
+  }
+  &__item-img {
+    margin: 0 auto;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 2;
+    top: 0;
+  }
+
+  &__item-text {
+    
+  }
+}
+.container {
+}
+.title {
+
+  &_result {
+  }
+}

@@ -1,0 +1,79 @@
+.title {
+  @extend %russo-font;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.04em;
+  &_header {
+    margin-top: 180px;
+    text-align: center;
+  }
+  &_level {
+    letter-spacing: 0;
+    text-align: center;
+  }
+  &_change {
+    margin-top: 20px;
+  }
+  &_skills {
+    text-align: center;
+  }
+  &_learn {
+    position: relative;
+    &::after {
+      width: 509px;
+      height: 608px;
+      content: "";
+      background: url(../images/logo.svg) center/contain no-repeat;
+      position: absolute;
+      opacity: .1;
+      z-index: -1;
+      right: 0;
+      top: -104px;
+    }
+  }
+  &_education {
+    text-align: center;
+  }
+  &_program,
+  &_autor,
+  &_price,
+  &_faq {
+    text-align: center;
+    font-size: 90px;
+    line-height: 108px;
+    letter-spacing: 0.03em;
+  }
+  &_result {
+    text-align: center;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 813px;
+      height: 812px;
+      background: radial-gradient(26.75% 29.79% at 48.14% 50%, #2C95E8 0%, rgba(162, 105, 255, 0.26) 100%);
+      opacity: 0.5;
+      filter: blur(104.5px);
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -2;
+    }
+  }
+  &_faq {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 813px;
+      height: 812px;
+      background: radial-gradient(26.75% 29.79% at 48.14% 50%, #2C95E8 0%, rgba(162, 105, 255, 0.26) 100%);
+      opacity: 0.5;
+      filter: blur(104.5px);
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -2;
+    }  
+  }
+}
