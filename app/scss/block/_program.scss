@@ -35,10 +35,9 @@
     background: #019EEB;
     border-radius: 20px;
     padding: 2px 16px;
-    width: 153px;
+    display: inline-block;
     &_orange {
       background: #FF8A1E;
-      width: 260px;
     }
   }
   &__info-title {
@@ -70,6 +69,7 @@
 
   &__result-img {
     border-radius: 20px;
+    object-fit: cover;
   }
 
   &__result-info {

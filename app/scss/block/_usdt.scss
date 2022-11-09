@@ -1,0 +1,67 @@
+.header {
+  &_usdt {
+    padding-bottom: 10px;
+  }
+  &__usdt {
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+.tarif {
+
+  &__wrapper {
+    max-width: 758px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 34px 60px;
+    background: linear-gradient(97.31deg, rgba(243, 243, 243, 0.2) 0%, rgba(243, 243, 243, 0.154583) 69.71%, rgba(243, 243, 243, 0.0861612) 89.95%, rgba(243, 243, 243, 0) 107.94%);
+    border: 1px solid rgba(247, 252, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    &_blue {
+      background: linear-gradient(97.5deg, #019EEB 0%, rgba(5, 173, 255, 0.2) 110.36%);
+    }
+    &_orange {
+      background: linear-gradient(97.31deg, #FF8A1E 0%, rgba(255, 138, 30, 0.2) 107.94%);
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+  }
+
+  &__item-old {
+    color: #778877;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__item-new {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  &__BEP20 {
+    margin-top: 10px;
+  }
+  &__BEP20,
+  &__descr {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__descr {
+    margin-top: 60px;
+  }
+}
+

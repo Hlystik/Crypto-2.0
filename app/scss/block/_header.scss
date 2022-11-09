@@ -2,6 +2,7 @@
   padding: 40px 0 270px;
   position: relative;
   &__geometry {
+    pointer-events: none;
     position: absolute;
     background: url(../images/geometry-1.png)center center/contain no-repeat;
     width: 524px;
@@ -18,6 +19,7 @@
     }
   }
   &__shadow {
+    pointer-events: none;
     position: absolute;
     width: 603px;
     height: 602px;
@@ -30,17 +32,10 @@
       width: 525.55px;
       height: 523.71px;
       background: radial-gradient(26.75% 29.79% at 48.14% 50%, #CA390C 0%, rgba(240, 111, 38, 0.26) 100%);
-      opacity: 0.5;
-      filter: blur(104.5px);
       transform: matrix(-0.85, 0.52, 0.52, 0.85, 0, 0);
       right: -122px;
       left: auto;
       top: -88px;
-    }
-  }
-  &__shadow {
-    &_right {
-
     }
   }
   &__wrapper {

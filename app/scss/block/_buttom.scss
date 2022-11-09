@@ -11,18 +11,34 @@
   text-align: center;
   line-height: 79px;
   transition: .6s;
+  @media (max-width:1279px) {
+    font-size: 32px;
+    width: auto;
+  }
   &:hover {
     background-color: #0134EB;
   }
   &_change {
     margin-top: 60px;
+    @media (max-width:1279px) {
+      display: none;
+    }
   }
   &_learn {
     margin-top: 60px;
+    @media (max-width:1279px) {
+      margin-top: 80px;
+    }
   }
   &_education {
     margin: 0 auto;
     margin-top: 80px;
+    @media (max-width:1439px) {
+      margin-top: 196px;
+    }
+    @media (max-width:1279px) {
+      margin-top: 80px;
+    }
   }
   &_price {
     width: auto;
@@ -30,6 +46,16 @@
     line-height: 70px;
     height: 70px;
     margin-top: 40px;
+    @media (max-width:1279px) {
+      font-size: 24px;
+      line-height: 60px;
+      height: 60px;
+      margin-top: 20px;
+    }
+  }
+  &_tarif {
+    width: 100%;
+    margin-top: 32px;
   }
 }
 .button-orange {
@@ -41,10 +67,20 @@
   font-size: 40px;
   line-height: 87px;
   color: #FFFFFF;
-  padding-left: 238px;
   margin-top: 40px;
+  &:hover {
+    background: #FF8A1E;
+  }
+  @media (max-width:1279px) {
+    font-size: 24px;
+  }
   &__text {
     position: relative;
+    width: 350px;
+    margin: 0 auto;
+    @media (max-width:1279px) {
+      width: 270px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -54,9 +90,50 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      right: 238px;
+      right: 0;
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+}
+@media (max-width: 767px) {
+  .button {
+    height: 39px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 39px;
+    &_change {
+      margin: 0 auto;
+      margin-top: 56px;
+      //max-width: 500px;
+    }
+    &_learn {
+      margin-top: 40px;
+    }
+    &_education {
+      margin-top: 40px;
+    }
+    &_price {
+      height: 45px;
+      line-height: 45px;
+      margin-top: 13px;
+    }
+    &_tarif {
+      margin-top: 20px;
+    }
+  }
+  .button-orange {
+    height: 38px;
+    font-size: 12px;
+    line-height: 38px;
+    margin-top: 20px;
+    &__text {
+      width: 173px;
+      padding-left: 40px;
+      &::after {
+        width: 22.89px;
+        height: 17.83px;
+      }
     }
   }
 }

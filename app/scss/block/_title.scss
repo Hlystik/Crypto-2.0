@@ -3,9 +3,16 @@
   font-size: 60px;
   line-height: 72px;
   letter-spacing: 0.04em;
+  @media (max-width:1279px) {
+    font-size: 36px;
+    line-height: 43px;
+  }
   &_header {
     margin-top: 180px;
     text-align: center;
+    @media (max-width:1279px) {
+      margin-top: 98px;
+    }
   }
   &_level {
     letter-spacing: 0;
@@ -13,6 +20,9 @@
   }
   &_change {
     margin-top: 20px;
+    @media (max-width:1279px) {
+      margin-top: 10px;
+    }
   }
   &_skills {
     text-align: center;
@@ -29,6 +39,12 @@
       z-index: -1;
       right: 0;
       top: -104px;
+      @media (max-width:1279px) {
+        width: 379px;
+        height: 453px;
+        right: -90px;
+        top: -111px;
+      }
     }
   }
   &_education {
@@ -43,6 +59,21 @@
     line-height: 108px;
     letter-spacing: 0.03em;
   }
+  
+  &_autor {
+    @media (max-width:1439px) {
+      font-size: 60px;
+      line-height: 72px;
+      letter-spacing: 0.04em;
+    }
+  }
+  &_program,
+  &_autor {
+    @media (max-width:1279px) {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
   &_result {
     text-align: center;
     position: relative;
@@ -51,13 +82,21 @@
       position: absolute;
       width: 813px;
       height: 812px;
-      background: radial-gradient(26.75% 29.79% at 48.14% 50%, #2C95E8 0%, rgba(162, 105, 255, 0.26) 100%);
+      /* background: radial-gradient(26.75% 29.79% at 48.14% 50%, #2C95E8 0%, rgba(162, 105, 255, 0.26) 100%);
       opacity: 0.5;
-      filter: blur(104.5px);
+      filter: blur(104.5px); */
+      background: url(../images/shadow-title.svg) center/contain no-repeat;
       top: -200px;
       left: 50%;
       transform: translateX(-50%);
       z-index: -2;
+    }
+  }
+  &_price,
+  &_faq {
+    @media (max-width:1279px) {
+      font-size: 36px;
+      line-height: 43px;
     }
   }
   &_faq {
@@ -67,13 +106,57 @@
       position: absolute;
       width: 813px;
       height: 812px;
-      background: radial-gradient(26.75% 29.79% at 48.14% 50%, #2C95E8 0%, rgba(162, 105, 255, 0.26) 100%);
+      /* background: radial-gradient(26.75% 29.79% at 48.14% 50%, #2C95E8 0%, rgba(162, 105, 255, 0.26) 100%);
       opacity: 0.5;
-      filter: blur(104.5px);
+      filter: blur(104.5px); */
+      background: url(../images/shadow-title.svg) center/contain no-repeat;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       z-index: -2;
+      @media (max-width:1279px) {
+        top: -300px;
+        transform: translateX(-50%);
+      }
     }  
+  }
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+    &_header {
+      font-size: 18px;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    &_learn {
+      &::after {
+        width: 161px;
+        height: 193px;
+        right: -40px;
+        top: -60px;
+      }
+    }
+    &_result {
+      &::before {
+        background: url(../images/shadow-title-768.svg) center/contain no-repeat;
+        width: 283px;
+        height: 282.65px;
+        top: -65px;
+      }
+      
+    }
+    &_faq {
+      &::before {
+        background: url(../images/shadow-title-768.svg) center/contain no-repeat;
+        width: 283px;
+        height: 282.65px;
+        top: -77px;
+      }
+    }
+    &_questions {
+      text-align: center;
+    }
   }
 }

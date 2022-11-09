@@ -22,6 +22,11 @@
     border-radius: 10px;
     min-height: 1258px;
   }
+  &__item-img {
+    width: 362px;
+    height: 270px;
+    object-fit: cover;
+  }
   &__item-title {
     font-size: 32px;
     line-height: 38px;
